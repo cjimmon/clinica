@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.mycompany.clinica.LoginController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+
+    <Label text="Iniciar Sesión" style="-fx-font-size: 18px;"/>
+    <TextField fx:id="txtUsername" promptText="Usuario"/>
+    <PasswordField fx:id="txtPassword" promptText="Contraseña"/>
+    <Button text="Entrar" fx:id="btnLogin" onAction="#handleLogin"/>
+    <Label fx:id="lblMessage" textFill="red"/>
+</VBox>
