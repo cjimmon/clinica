@@ -13,10 +13,10 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/mycompany/clinica/LoginView.fxml"));
         Parent root = loader.load();
 
-           Scene scene = new Scene(root, 400, 250);
+           Scene scene = new Scene(root, 800, 350);
 scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
 stage.setScene(scene);
-stage.setTitle("Login - Reserva Rural App");
+stage.setTitle("Login - Clinica");
 stage.show();
     }
 
